@@ -59,7 +59,7 @@ for url in target_urls:
     print(f"내용: {contents[:100]}...")
 
     ##### docx 파일로 저장 #####
-    ROOT_PATH="./독일대사과_게시글" # 저장할 폴더위치
+    ROOT_PATH= "독일대사관_게시글"  # 저장할 폴더위치
     doc = Document()
 
     # 인코딩(폰트) 전용 함수

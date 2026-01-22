@@ -40,16 +40,15 @@ os.makedirs("내가 만든 폴더",exist_ok=True)
 
 # 도전!) 제목: 내가 만든 워드, 글:"헬로 파이썬"
 # 을 내가 만든폴더2에 저장
-new_doc=Document()
-title2=new_doc.add_heading("내가 만든 워드",level=1)
+new_doc=Document() # 새파일
+title2=new_doc.add_heading("내가만든 워드",level=1)
 # 한글 폰트 지정
 title2.runs[0].font.name="Malgun Gothic"
 
 new_pg=new_doc.add_paragraph("헬로 파이썬")
 new_pg.runs[0].font.name="Malgun Gothic"
 
-
-os.makedirs("내가 만든 폴더2",exist_ok=True)
+os.makedirs("내가만든폴더2",exist_ok=True)
 
 if os.path.exists("./내가만든폴더2"):
     new_doc.save("./내가만든폴더2/연습.docx")
